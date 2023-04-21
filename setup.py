@@ -4,6 +4,7 @@ from setuptools import find_namespace_packages,setup
 from typing import List
 
 HYPEN_E_DOT = '-e .'
+
 def get_requirements(file_path:str)->List[str]:
     requirements = []
     with open(file_path) as file_obj:
@@ -17,10 +18,11 @@ def get_requirements(file_path:str)->List[str]:
 
 
 setup(
+    #metadata
     name='RegressionProject',
     version='0.0.1',
     author='Akish',
     author_email='akishpothuri@gmail.com',
-    install_requires = ['numpy','pandas'],
+    install_requires = get_requirements("requirements.txt"),
     packages = find_namespace_packages()
 )

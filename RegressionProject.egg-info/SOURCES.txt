@@ -3253,3 +3253,15 @@ env/Lib/site-packages/werkzeug/wrappers/request.py
 env/Lib/site-packages/werkzeug/wrappers/response.py
 env/Lib/site-packages/zipp/__init__.py
 env/Lib/site-packages/zipp/py310compat.py
+env/Scripts/f2py-script.py
+src/__init__.py
+src/exception.py
+src/logger.py
+src/utils.py
+src/components/__init__.py
+src/components/data_ingetion.py
+src/components/data_transformation.py
+src/components/model_trainer.py
+src/pipeline/__init__.py
+src/pipeline/prediction_pipeline.py
+src/pipeline/training_pipeline.py

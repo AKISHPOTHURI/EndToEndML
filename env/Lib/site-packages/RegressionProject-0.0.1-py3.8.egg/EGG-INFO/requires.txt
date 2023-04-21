@@ -1,2 +1,5 @@
 numpy
 pandas
+Flask
+seaborn
+matplotlib
