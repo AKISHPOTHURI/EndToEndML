@@ -1,0 +1,34 @@
+[ 2023-05-10 17:34:06,929 ] 224 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.139.156.80:5000
+[ 2023-05-10 17:34:06,929 ] 224 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2023-05-10 17:34:13,718 ] 1744 app - ERROR - Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\akish.pothuri\python\EndToEndMLProject\env\lib\site-packages\flask\app.py", line 2528, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\akish.pothuri\python\EndToEndMLProject\env\lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\akish.pothuri\python\EndToEndMLProject\env\lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\akish.pothuri\python\EndToEndMLProject\env\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 13, in home_page
+    return render_template('index.html')
+  File "C:\Users\akish.pothuri\python\EndToEndMLProject\env\lib\site-packages\flask\templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\akish.pothuri\python\EndToEndMLProject\env\lib\site-packages\jinja2\environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "C:\Users\akish.pothuri\python\EndToEndMLProject\env\lib\site-packages\jinja2\environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "C:\Users\akish.pothuri\python\EndToEndMLProject\env\lib\site-packages\jinja2\environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\akish.pothuri\python\EndToEndMLProject\env\lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "C:\Users\akish.pothuri\python\EndToEndMLProject\env\lib\site-packages\flask\templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\akish.pothuri\python\EndToEndMLProject\env\lib\site-packages\flask\templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+[ 2023-05-10 17:34:13,746 ] 224 werkzeug - INFO - 127.0.0.1 - - [10/May/2023 17:34:13] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[ 2023-05-10 17:34:13,781 ] 224 werkzeug - INFO - 127.0.0.1 - - [10/May/2023 17:34:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
